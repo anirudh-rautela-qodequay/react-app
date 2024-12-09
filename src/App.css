@@ -36,3 +36,101 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-full-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* General input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input focus styling */
+input:focus {
+  outline: none;
+  border-color: #45cb85; /* Green border when focused */
+  box-shadow: 0 0 4px rgba(69, 203, 133, 0.5);
+}
+
+/* Error input styling */
+input.error {
+  border-color: #ff5555;
+  box-shadow: 0 0 8px rgba(255, 85, 85, 0.5); /* Red glow for error */
+  background-color: rgba(255, 85, 85, 0.1); /* Light red background */
+}
+/* General input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input focus styling */
+input:focus {
+  outline: none;
+  border-color: #45cb85; /* Green border when focused */
+  box-shadow: 0 0 4px rgba(69, 203, 133, 0.5);
+}
+
+/* Error input styling */
+input.error {
+  border-color: #ff5555;
+  box-shadow: 0 0 8px rgba(255, 85, 85, 0.5); /* Red glow for error */
+  background-color: rgba(255, 85, 85, 0.1); /* Light red background */
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff5555;
+  font-size: 0.875rem; /* Slightly smaller than normal text */
+  margin: 5px;
+  height: 12px;
+  text-align: left;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show error message */
+input.error + .error-message {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .error-message {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .error-message {
+    font-size: 0.8rem;
+  }
+}
